@@ -68,7 +68,8 @@ A consulta individual usa CPF ou Cartão SUS e data de nascimento. Esses dados s
 .
 ├── data/
 │   └── raw/        # CSVs brutos, como publicados
-└── docs/           # Plano, decisões e referências
+├── docs/           # Plano, decisões e referências
+└── notebooks/      # Análise exploratória
 ```
 
 ## 🚀 Como rodar localmente
