@@ -73,15 +73,17 @@ A consulta individual usa CPF ou Cartão SUS e data de nascimento. Esses dados s
 
 ## 🚀 Como rodar localmente
 
-<!-- TODO: preencher após o setup do ambiente (Módulo 0) -->
+Pré-requisito: [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ```bash
 git clone https://github.com/w4nessa/SaudeIndicadoresRegulacaoGoias.git
 cd SaudeIndicadoresRegulacaoGoias
-# instalar dependências
-# rodar o pipeline
-# streamlit run app/...
+uv sync
 ```
+
+<!-- TODO: comandos do pipeline e do painel, quando existirem -->
+
+> O `uv sync` instala a versão correta do Python e todas as dependências, com as versões exatas travadas no `uv.lock`.
 
 <a id="roadmap"></a>
 
