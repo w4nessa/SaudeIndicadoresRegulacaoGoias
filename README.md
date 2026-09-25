@@ -76,7 +76,7 @@ A consulta individual usa CPF ou Cartão SUS e data de nascimento. Esses dados s
 <!-- TODO: preencher após o setup do ambiente (Módulo 0) -->
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/w4nessa/SaudeIndicadoresRegulacaoGoias.git
 cd SaudeIndicadoresRegulacaoGoias
 # instalar dependências
 # rodar o pipeline

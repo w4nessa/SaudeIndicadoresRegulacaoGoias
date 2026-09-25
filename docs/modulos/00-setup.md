@@ -5,8 +5,8 @@
 ## Checklist
 
 - [x] Escolher o gerenciador de ambiente → **uv** ([decisão](../decisoes.md))
-- [ ] Repositório git + projeto `uv` (Python 3.13)
-- [ ] Repositório no GitHub vinculado
+- [x] Repositório git vinculado ao GitHub
+- [ ] Projeto `uv` (Python 3.13)
 - [ ] Estrutura de pastas ([convenção de idioma](../decisoes.md))
 
 ## Perguntas para investigar
