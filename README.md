@@ -89,7 +89,7 @@ uv sync
 
 ## 🗺️ Roadmap
 
-- [ ] **Setup:** ambiente, versionamento e estrutura de pastas
+- [x] **Setup:** ambiente com uv, versionamento e convenções do projeto
 - [ ] **Análise exploratória:** entender granularidade, qualidade e armadilhas dos dados
 - [ ] **Pipeline:** do CSV bruto ao DuckDB, com validação
 - [ ] **Painel:** indicadores de cirurgias, consultas e exames com filtros

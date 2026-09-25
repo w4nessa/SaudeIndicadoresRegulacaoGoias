@@ -12,4 +12,5 @@ Uma linha por decisão. Se o motivo precisar de mais que duas frases, ele vira u
 | 2026-09-25 | Ambiente com **uv** | Lockfile automático e multiplataforma (deploy e Actions rodam Linux); garante a mesma versão do DuckDB que gerou o banco. Contrapontos: ferramenta jovem, mantida por empresa (Astral) |
 | 2026-09-25 | **Python 3.13** | Versão já instalada; trocar se algum pacote não suportar |
 | 2026-09-25 | **Idioma:** pastas e código em inglês (`data/raw`, `src/`…); termos de domínio em português (`cirurgia`, `fila`…); documentação em português, incluindo os nomes das pastas dentro de `docs/` | Convenção do ecossistema para a estrutura; termos do SUS não ganham clareza traduzidos; o público é brasileiro |
+| 2026-09-25 | **Pastas criadas sob demanda**, não antecipadas | Evita pastas vazias e forçar o código num molde que pode não servir |
 | 2026-09-25 | Documentação com **progressive disclosure** | Índices curtos que apontam para arquivos menores; evita documentos gigantes que ocupam contexto |
