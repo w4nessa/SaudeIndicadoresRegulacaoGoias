@@ -13,7 +13,7 @@
 | # | Módulo | Status | Resumo |
 |---|---|---|---|
 | 0 | [Setup](modulos/00-setup.md) | 🟢 concluído | uv + Python 3.13, git, estrutura de pastas |
-| 1 | [EDA](modulos/01-eda.md) | ⚪ não iniciado | Entender granularidade, tipos e armadilhas dos dados |
+| 1 | [EDA](modulos/01-eda.md) | 🟡 em andamento | Entender granularidade, tipos e armadilhas dos dados |
 | 2 | [Pipeline e banco](modulos/02-pipeline-banco.md) | ⚪ não iniciado | Do CSV bruto ao DuckDB, com validação |
 | 3 | [Painel Streamlit](modulos/03-painel.md) | ⚪ não iniciado | Perguntas de gestão → gráficos e filtros |
 | 4 | [Consulta via API](modulos/04-api.md) | ⚪ não iniciado | Posição individual na fila, com cuidado de LGPD |
