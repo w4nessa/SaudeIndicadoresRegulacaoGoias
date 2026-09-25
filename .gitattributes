@@ -1,0 +1,2 @@
+# Dados brutos são mantidos byte a byte como publicados na fonte (sem conversão de quebra de linha)
+data/raw/** -text
