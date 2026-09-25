@@ -1,0 +1,19 @@
+[project]
+name = "saudeindicadoresregulacaogoias"
+version = "0.1.0"
+description = "Painel interativo sobre as filas de cirurgias, consultas e exames da regulação estadual de saúde de Goiás. Python, DuckDB e Streamlit."
+readme = "README.md"
+authors = [
+    { name = "Wanessa Silva", email = "w4nessa@outlook.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.5.5",
+    "pandas>=3.0.6",
+    "streamlit>=1.64.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]

@@ -1,2 +1,12 @@
 # Documentação privada
 docs/privado/
+
+# Ambiente virtual
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
