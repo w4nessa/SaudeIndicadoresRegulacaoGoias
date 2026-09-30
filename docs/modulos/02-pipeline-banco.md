@@ -8,6 +8,7 @@
 - [ ] Pensar em camadas: *raw → limpo → agregado* (pesquisar: arquitetura medalhão, bronze/silver/gold)
 - [ ] Padronizar nomes de colunas (`snake_case`, sem acento?)
 - [ ] Validação de dados: pesquisar **pandera** ou **Great Expectations**. Que regras esses dados deveriam obedecer?
+- [ ] Gravar a **data de atualização dos dados** no pipeline e usá-la para excluir automaticamente o mês ainda não fechado ([ver decisão](../decisoes.md)). Até lá, o corte é manual
 - [ ] Pipeline como **comando único, que roda do zero sem intervenção manual** (pré-requisito da automação no [Módulo 5](05-portfolio.md))
 
 ## Perguntas para investigar
