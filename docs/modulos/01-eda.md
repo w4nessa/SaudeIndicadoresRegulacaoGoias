@@ -30,7 +30,7 @@
 - **Tipos reais:** só `Mês` e `Especialidade` são texto. `Dias em fila`, `Em fila` e `Procedimentos realizados` são inteiros; `Tempo médio de espera (Dias)` é decimal. Isso contradiz o dicionário oficial (tudo `text`).
 - **Período:** 2023/01 a 2026/09, 45 meses, sem buracos. Todo mês tem procedimentos.
 - **O último mês do arquivo é o mês corrente, com dados parciais.** No download de 2026-09-30, é 2026/09. Ele fica fora dos cálculos enquanto não fechar; no próximo download, entra normalmente (ver [decisões](../decisoes.md)).
-- **Setembro/2026 marca uma quebra de série.** A fila total salta de ~7 mil (2026/08) para ~30,6 mil, em todas as especialidades ao mesmo tempo (mediana de 4,3×), e o tempo médio de espera sobe junto. Explicação provável: municípios migrando do SISREG para a regulação estadual. Exemplo: Caldas Novas passou a usar o Transparência Regulação, com os pedidos de agosto entrando primeiro e a fila antiga do SISREG migrada gradualmente ([post da prefeitura](https://bit.ly/4zjZL7S)). Consequências:
+- **Setembro/2026 marca uma quebra de série.** A fila total salta de ~7 mil (2026/08) para ~30,6 mil, em todas as especialidades ao mesmo tempo (mediana de 4,3×), e o tempo médio de espera sobe junto. Causa: mudança na abrangência da regulação estadual, com municípios saindo do SISREG e entrando na fila estadual. A SES-GO não tem documentação oficial sobre essa mudança. Consequências:
   - fila antes e depois da migração cobre populações diferentes e não se compara direto;
   - como a migração é gradual, os meses seguintes podem continuar subindo.
 - **Procedimentos realizados só existem nas linhas sem `/` (linha mãe).** Nenhuma das 5.714 linhas com `/` tem procedimento; das 889 sem `/`, 877 têm. Isso vale para todas as famílias.
