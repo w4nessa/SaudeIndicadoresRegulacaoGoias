@@ -15,7 +15,8 @@
 - [x] Existe relação matemática entre `Dias em fila`, `Em fila` e `Tempo médio de espera`?
   - `Tempo médio de espera = Dias em fila / Em fila`, arredondado em 2 casas, em 100% das linhas de cirurgia (`Em fila` nunca é zero). É coluna derivada, recalculável.
 - [ ] `Perda primária` e `Perda secundária` são contagens ou percentuais? Como descobrir só olhando os dados?
-  - Só existem em consultas e exames, não em cirurgia. Fica para as EDAs desses arquivos.
+  - Só existem em consultas e exames, não em cirurgia.
+  - **Consultas:** percentuais. A primária é a parcela das vagas ofertadas que não foi preenchida; a secundária é a parcela das vagas agendadas que não foi usada (ver [descobertas de consulta](#consulta)). Falta responder para exames.
 - [ ] Qual período os dados cobrem? Algum mês está faltando? Algum parece incompleto?
   - **Cirurgia:** 2023/01 a 2026/09, 45 meses, nenhum faltando. O último mês é sempre o corrente, com dados parciais (ver [descobertas de cirurgia](#cirurgia)). Falta responder para consultas e exames.
 
@@ -49,6 +50,18 @@
   - a convenção de nome não é consistente: `ORTOPEDIA MUTIRÃO` usa espaço, e `GINECOLOGIA/MUTIRÃO` usa `/`. Separar família pela barra transforma a primeira numa família à parte;
   - `Tempo médio de espera` pode ser recalculado em vez de armazenado.
 - **Lacunas anotadas, sem investigar:** a linha mãe `OFTALMOLOGIA` só aparece em 6 meses (entre 2024/02 e 2024/10), com ~1.500 procedimentos por mês e fila de 1 a 15. Fora disso, a oftalmologia só tem filhas, sem produção. A série de produção de oftalmologia é incompleta.
+
+### Consulta
+
+*Notebook: [02-eda-consultas.ipynb](../../notebooks/02-eda-consultas.ipynb). Em andamento.*
+
+- **Tipos inferidos pelo pandas:** as 7 colunas de dimensão são texto (`Mês`, `Central Regulação`, `Unidade de saúde`, `Unidade de saúde/Região`, `Especialidade`, `Sub-Especialidade`, `Complexidade`). Entre as métricas:
+  - inteiros: `Agendamentos cancelados pelo solicitante ou rotina automática` e `Compareceu`;
+  - decimais: todas as outras, inclusive contagens como `Vagas ofertadas`, `Agendamentos` e `Faltantes`, que vêm com `.0` (ex.: `8.0`).
+- **`Perda primária` e `Perda secundária` são percentuais.**
+  - Perda primária: vagas que não chegaram a ser preenchidas, em relação às vagas ofertadas. Exemplo da primeira linha (oncologia clínica, 2023/10): 8 vagas ofertadas e 8 não preenchidas dão 100%.
+  - Perda secundária: vagas que foram agendadas, mas não foram usadas. Por exemplo, a pessoa confirmou a consulta e não compareceu.
+- **Granularidade:** aparentemente Mês × Central × Unidade × Especialidade × Subespecialidade, como em [dados.md](../referencias/dados.md). Confirmação ainda provisória.
 
 ## Entregável
 

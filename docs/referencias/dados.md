@@ -12,6 +12,6 @@ Três CSVs em `data/raw/`, separados por `;`, com indicadores mensais das filas 
 | `indicadores-de-consulta.csv` | 17 mil | Mês × Central × Unidade × Especialidade × Subespecialidade |
 | `indicadores-de-exames.csv` | 9 mil | Mês × Central × Unidade × Grupo de exames |
 
-> A granularidade acima veio só da leitura dos cabeçalhos. Confirmar no [Módulo 1](../modulos/01-eda.md).
+> A granularidade acima veio só da leitura dos cabeçalhos. Confirmar no [Módulo 1](../modulos/01-eda.md). Consulta: a EDA indica que está correta, mas a confirmação ainda é provisória.
 
 **Dicionário oficial:** [dicionario-oficial.md](dicionario-oficial.md). Lista as colunas de cada conjunto, mas sem tipos reais nem descrições.
